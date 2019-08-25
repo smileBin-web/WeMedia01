@@ -22,13 +22,14 @@ function Recommand (props) {
 
     const loading = fetchRecommandList || fetchCheckRecommandList
     
+    // 首次渲染完成 请求推荐列表
     useEffect(() => {
       dispatch({ 
         type: 'applist/fetchRecommandList', 
-      }); 
+      })
     }, []);
 
-   
+    // 搜索模式下请求与关键字匹配的推荐列表
     useEffect(() => {
       if (mode === 'search') {
         // 启动loading
