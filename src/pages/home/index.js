@@ -163,9 +163,9 @@ const HomePage = (props) => {
         dataSource={dataSource}
         renderFooter={() => {
           
-          const tips = loading ? 'loading' :
-                         isAll ? '到底啦' :
-             list.length === 0 ? '暂无匹配' : 'loaded'
+          const tips = loading ? 'loading' : 
+             list.length === 0 ? '暂无匹配' :
+            (mode === 'recommand' && isAll) || (mode === 'search') ? '到底啦' :'loaded'
 
           return <div style={{ padding: 10, textAlign: 'center' }}>{tips}</div>
         

@@ -77,10 +77,10 @@ export default {
             payload: data.data,
           });
 
-          yield put({
-            type: 'changeisAllState',
-            payload: false,
-          });
+          // yield put({
+          //   type: 'changeisAllState',
+          //   payload: false,
+          // });
         
         } catch (e) {
           
