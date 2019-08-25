@@ -76,11 +76,6 @@ export default {
             type: 'changeCheckTopList',
             payload: data.data,
           });
-
-          // yield put({
-          //   type: 'changeisAllState',
-          //   payload: false,
-          // });
         
         } catch (e) {
           
