@@ -103,11 +103,8 @@ const HomePage = (props) => {
     const comments = Math.ceil(Math.random()*100)
     
     const starList = new Array(5).fill(null).map((item, index)=>{
-      let theme="outlined"
-      if (index <= star) {
-        theme = 'filled'
-      }
       
+      let theme= index <= star ? "outlined" : 'filled'
       return <Icon type="star" theme={theme} style={{color: '#ff5b05'}} key={index}/>
     })
     
@@ -132,7 +129,7 @@ const HomePage = (props) => {
     //   </Transition> : <div style={{height: '83px'}} key={rowID}></div>
     return (<div className={style['list-item']} key={rowID}>
           <div className={style.index}>{rowID + 1}</div>
-          <img src={imgSrc} alt="" className={rowID%2===0 ?  style.round: style.circle}/>
+          <img src={imgSrc} alt="" className={rowID%2===0 ? style.round : style.circle}/>
           <div className={style.info}>
             <p>{name}</p>
             <span>{category}</span>
@@ -168,7 +165,7 @@ const HomePage = (props) => {
           
           const tips = loading ? 'loading' :
                          isAll ? '到底啦' :
-            list.length === 0  ? '暂无匹配' : 'loaded'
+             list.length === 0 ? '暂无匹配' : 'loaded'
 
           return <div style={{ padding: 10, textAlign: 'center' }}>{tips}</div>
         
