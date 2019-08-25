@@ -2,7 +2,7 @@ Dear WeMedia01 team !
 
 this test project is build depending Umijs [more about Umijs][1]
 
-#### 安装依赖
+#### 安装环境
 
 安装 yarn
 
@@ -31,11 +31,18 @@ C:\Users\Administrator\AppData\Local\Yarn\bin
 # 复制上面的 global bin 的路径，添加到系统环境变量 PATH。
 ```
 
+#### 安装依赖
+```js
+$ yarn
+```
+
 启动本地服务器
 
 ```js
 umi dev
 ```
+open browser on http://localhost:8000
+
 #### welcome to provide precious suggestion
 
 [1]:https://umijs.org/zh/ "umi官网"
