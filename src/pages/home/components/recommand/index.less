@@ -1,6 +1,6 @@
 @import '~antd-mobile/dist/antd-mobile.less';
 
-@padding: 20px;
+@padding: @h-spacing-lg;
 
 .container{
     width: 100%;
@@ -17,15 +17,15 @@
 .scroll{
     width: 100%;
     overflow-x: scroll;
+    overflow-y: hidden;
     position: relative;
-    height: 160px;
+    height: @h-spacing-lg*11;
 }
 .list{
     position: absolute;
     left:0;
     top:0;
     padding-left: @padding;
-    // width: 820px;
     padding-bottom: @padding;
     display: flex; 
    
@@ -43,7 +43,6 @@
 }
 
 .list-item{
-    width: 100px;
     display: flex;
     flex-direction: column;
     padding-right: @padding;
@@ -51,6 +50,8 @@
         border-radius: @radius-lg;
     }
     & > p{
+        padding-top: @h-spacing-lg/2;
+        line-height: 1.6em;
         font-size: @font-size-base;
         color: @color-text-base;
         font-weight: bold;

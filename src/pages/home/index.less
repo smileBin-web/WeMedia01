@@ -1,5 +1,7 @@
 @import '~antd-mobile/dist/antd-mobile.less';
 
+@padding: @h-spacing-lg;
+
 .layout{
     width: 100%;
     height: 100%;
@@ -28,14 +30,14 @@
 .list-item{
     box-sizing: border-box;
     // height: 83px;
-    padding: 10px 20px;
+    padding: @padding/2 @padding;
     display: flex;
     align-items: center;
     & > img{
-        margin-right: 10px
+        margin-right: @padding/2
     }
     .index{
-        padding-right: 20px;
+        padding-right: @padding;
         font-size: @font-size-caption;
         color: @color-text-secondary;
     }
@@ -61,7 +63,7 @@
 
 
 .border{
-    margin: 0 20px;
+    margin: 0 @padding;
     border-bottom: @border-width-sm solid @fill-grey;
 }
 
@@ -90,7 +92,7 @@
 .star{
     display: flex;
     & > span{
-        padding-left: 5px;
+        padding-left: @h-spacing-sm;
         font-size: @font-size-base;
         color: @color-text-secondary;
     }
