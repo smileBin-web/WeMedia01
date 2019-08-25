@@ -1,6 +1,6 @@
 Dear WeMedia01 team !
 
-this test project is build dependening Umijs [more about Umijs][1]
+this test project is build depending Umijs [more about Umijs][1]
 
 #### 安装依赖
 
@@ -37,8 +37,6 @@ C:\Users\Administrator\AppData\Local\Yarn\bin
 umi dev
 ```
 #### welcome to provide precious suggestion
-
-## 参考
 
 [1]:https://umijs.org/zh/ "umi官网"
 
