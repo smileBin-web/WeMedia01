@@ -1,0 +1,106 @@
+@import '~antd-mobile/dist/antd-mobile.less';
+
+.layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    & > div:first-child{
+        width: 100%;
+        flex-grow: 0
+    }
+    & > div:last-child{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1
+    }
+}
+
+.am-list{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: @fill-base;
+}
+
+.list-item{
+    box-sizing: border-box;
+    // height: 83px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    & > img{
+        margin-right: 10px
+    }
+    .index{
+        padding-right: 20px;
+        font-size: @font-size-caption;
+        color: @color-text-secondary;
+    }
+}
+
+.animation{
+    animation: fade 1s;
+    -webkit-animation: fade 1s;
+}
+
+@keyframes fade
+{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fade /* Safari 和 Chrome */
+{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+
+.border{
+    margin: 0 20px;
+    border-bottom: @border-width-sm solid @fill-grey;
+}
+
+.round{
+    border-radius: @radius-lg;
+}
+
+.circle{
+    border-radius:@radius-circle;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    & > p{
+        font-size: @font-size-base;
+        color: @color-text-base;
+        font-weight: bold;
+    }
+    & > span{
+        font-size: @font-size-base;
+        color: @color-text-secondary;
+    }
+}
+
+.star{
+    display: flex;
+    & > span{
+        padding-left: 5px;
+        font-size: @font-size-base;
+        color: @color-text-secondary;
+    }
+}
+
+
+
+
+
+
+
+
+

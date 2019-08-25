@@ -1,0 +1,63 @@
+@import '~antd-mobile/dist/antd-mobile.less';
+
+@padding: 20px;
+
+.container{
+    width: 100%;
+    overflow: hidden;
+    // border-bottom: @border-width-sm solid @border-color-base; 
+    & > p{
+        padding: @padding;
+        font-weight: bold;
+        font-size: @font-size-caption;
+        color: @color-text-base
+    }
+}
+
+.scroll{
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+    height: 160px;
+}
+.list{
+    position: absolute;
+    left:0;
+    top:0;
+    padding-left: @padding;
+    // width: 820px;
+    padding-bottom: @padding;
+    display: flex; 
+   
+}
+
+.ellipsis-two{
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+   /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+}
+
+.list-item{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-right: @padding;
+    & > img{
+        border-radius: @radius-lg;
+    }
+    & > p{
+        font-size: @font-size-base;
+        color: @color-text-base;
+        font-weight: bold;
+    }
+    & > span{
+        font-size: @font-size-base;
+        color: @color-text-secondary;
+    }
+}
+

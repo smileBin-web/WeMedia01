@@ -1,0 +1,8 @@
+{
+    "editor.rulers": [
+        100,
+        120
+    ],
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+}
