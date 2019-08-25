@@ -104,7 +104,7 @@ const HomePage = (props) => {
     
     const starList = new Array(5).fill(null).map((item, index)=>{
       
-      let theme= index <= star ? "outlined" : 'filled'
+      let theme= index <= star ? "filled" : 'outlined'
       return <Icon type="star" theme={theme} style={{color: '#ff5b05'}} key={index}/>
     })
     
